@@ -84,7 +84,17 @@ header .icons a:hover {
     padding: 2rem 1rem;
 }
 
-.about, .projects {
+.about{
+    background: linear-gradient(135deg, #222, #333);
+    color: #e0f7fa;
+    box-shadow: 0 6px 14px rgba(196, 183, 1, 0.3);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.projects {
     background: #1a1a1a;
     padding: 2rem;
     border-radius: 10px;
