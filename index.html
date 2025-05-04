@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <title>Learning Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -16,113 +17,55 @@
         </ul>
     </nav>
 
-    <button class="popup-toggle" onclick="togglePopup()">Time's valuable... Contact Me</button>
-
-    <div class="side-popup" id="popup">
-        <h2>Contact Me</h2>
-        <form action="mailto:moalhindi@hotmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-
     <header>
         <h1>Mohammed Al-Hindi</h1>
+        <p>Biomedical & Electrical Engineering Student</p>
         <div class="icons">
-            <a href="javascript:void(0)" title="Email" onclick="copyEmailToClipboard(this)" data-email="moalhindi@hotmail.com">Email</a>
-            <div id="email-alert" class="hidden">Email copied to clipboard!</div>
-            <a href="https://github.com/MhmdAlHindi" title="GitHub">GitHub</a>
-            <a href="https://www.linkedin.com/in/al-hindi" title="LinkedIn">LinkedIn</a>
+            <a href="#" onclick="copyEmailToClipboard(this)" data-email="moalhindi@hotmail.com">Email</a>
+            <a href="https://github.com/MhmdAlHindi">GitHub</a>
+            <a href="https://www.linkedin.com/in/al-hindi">LinkedIn</a>
         </div>
     </header>
 
     <div class="container">
-        <section class="about" id="about">
-            <div class="about-content">
-                <img src="./PFP.jpg" alt="Profile Photo">
-                <div>
-                    <h2>About Me</h2>
-                    <p>I’m a passionate and hardworking Biomedical and Electrical Engineering student at McMaster University. Growing up in Dubai and currently studying in Ontario, I’ve embraced diverse cultures that contributed to my growth and skill development. I hope that my passion for knowledge helps me portray the person I’d like to be.</p>
-                </div>
-            </div>
-
-            <div class="experience-logos">
-                <img src="https://brand.mcmaster.ca/app/uploads/2024/02/mcmaster-logo-2024-col.jpg" class="experience-logo">
-                <img src="https://play-lh.googleusercontent.com/ysWHYRUl8yVb6uwmJH6IHvu0g1z1iDjAcIvoiZlEcpQp2VubWCtjf4zBIP5KiSufcQ" class="experience-logo">
-                <img src="https://www.ieeemcmaster.ca/assets/ieee-sb-mcmaster-logo.png" class="experience-logo">
-                <img src="https://ugc.production.linktr.ee/6a2fcda1-847b-4277-9769-629c90a0d343_Brown-Abstract-Shape-Youtube-Profile-Picture.png?io=true&size=avatar-v3_0" class="experience-logo">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-flex">
+                <img src="./pfp.jpg" alt="Profile Picture">
+                <p>
+                    I’m a passionate and hardworking Biomedical and Electrical Engineering student at McMaster University. Growing up in Dubai and currently studying in Ontario, I’ve embraced diverse cultures that contributed to my growth and skill development. I hope that my passion for knowledge helps me portray the person I’d like to be.
+                </p>
             </div>
         </section>
 
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-            <div class="project-list">
+        <section id="projects" class="projects">
+            <h2>Design Projects</h2>
+            <div class="project-grid">
                 <div class="project">
-                    <a href="DP1.html">
-                        <div class="project-image" style="background-image: url('https://media.licdn.com/dms/image/v2/D5622AQE7b2OgrAkzTg/feedshare-shrink_1280/feedshare-shrink_1280/0/1713925595199?e=1740009600&v=beta&t=ZSNzuZgUCqzEhg_dMFkaDNsht1vGy7ZHR7gRGbD9HGk');"></div>
-                        <div class="project-banner">
-                            <h3>Design Project 1 - Oct 2023</h3>
-                            <p>Ostomy Appliance Design & Modelling</p>
-                        </div>
-                    </a>
+                    <div class="project-image" style="background-image: url('./project2.jpg');"></div>
+                    <div class="project-banner">
+                        <h3>C/C++ Snake Game</h3>
+                        <p>Coded a fully functional snake game in C/C++! The game utilizies Object-Oriented Programming, efficient memory allocation, and customizable gameplay. Different data structures can be implemented via polymorphism for performance tuning.</p>
+                    </div>
                 </div>
+
                 <div class="project">
-                    <a href="DP2.html">
-                        <div class="project-image" style="background-image: url('https://media.licdn.com/dms/image/v2/D5622AQH00nuWCIz45w/feedshare-shrink_1280/feedshare-shrink_1280/0/1713925594722?e=1740009600&v=beta&t=56jwdz5k7ftJECVFh6ze5rQzw5oaX6N4hARxa5UmEAQ');"></div>
-                        <div class="project-banner">
-                            <h3>Design Project 2 - Jan 2024</h3>
-                            <p>Zirconia-Toughened Hip Implant Modelling</p>
-                        </div>
-                    </a>
+                    <div class="project-image" style="background-image: url('./SlideDeck.png');"></div>
+                    <div class="project-banner">
+                        <h3>Ostomy Appliance Solution</h3>
+                        <p>Conceptualized and designed a specialized ostomy appliance using AutoCAD 360 and 3D printing, tailored for a patient with Ulcerative Colitis.</p>
+                    </div>
                 </div>
+
                 <div class="project">
-                    <a href="DP3.html">
-                        <div class="project-image" style="background-image: url('https://media.licdn.com/dms/image/v2/D5622AQFXKomFYqXRvw/feedshare-shrink_1280/feedshare-shrink_1280/0/1713925595031?e=1740009600&v=beta&t=HnaaSw9Vew-Qa-JQDCdh95WV9eVRCj_HdYnJpQ4Rxi4');"></div>
-                        <div class="project-banner">
-                            <h3>Design Project 3 - Feb 2024</h3>
-                            <p>RaspberryPi sensor-Activated Neckrest</p>
-                        </div>
-                    </a>
+                    <div class="project-image" style="background-image: url('./project2.jpg');"></div>
+                    <div class="project-banner">
+                        <h3>Autonomous Line Follower Robot</h3>
+                        <p>Designed and built a PID-controlled robot capable of navigating dynamic tracks using infrared sensors and Arduino.</p>
+                    </div>
                 </div>
             </div>
-        </section>            
+        </section>
     </div>
-
-    <script>
-        function togglePopup() {
-            const popup = document.getElementById('popup');
-            popup.classList.toggle('open');
-        }
-
-        window.addEventListener('click', function(event) {
-            const popup = document.getElementById('popup');
-            const popupToggle = document.querySelector('.popup-toggle');
-            if (!popup.contains(event.target) && !popupToggle.contains(event.target)) {
-                popup.classList.remove('open');
-            }
-        });
-
-        function copyEmailToClipboard(element) {
-            const email = element.getAttribute('data-email');
-            navigator.clipboard.writeText(email).then(() => {
-                const alert = document.getElementById('email-alert');
-                const rect = element.getBoundingClientRect();
-                const offset = 8;
-                alert.style.top = `${rect.bottom + window.scrollY + offset}px`;
-                alert.style.left = `${rect.left + window.scrollX}px`;
-                alert.classList.remove('hidden');
-                alert.classList.add('show');
-
-                setTimeout(() => {
-                    alert.classList.remove('show');
-                    setTimeout(() => alert.classList.add('hidden'), 300);
-                }, 2000);
-            }).catch(err => {
-                console.error("Failed to copy email: ", err);
-            });
-        }
-    </script>
 </body>
 </html>

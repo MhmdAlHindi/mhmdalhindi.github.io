@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostomy Appliance Modification Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        :root {
+            --bg-dark: #0d0d0d;
+            --bg-light: #1a1a1a;
+            --text-light: #f5f5f5;
+            --text-muted: #ccc;
+            --accent: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: var(--bg-light);
+            padding: 1rem 2rem;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #bbb;
+        }
+
+        header {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            text-align: left;
+            box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+            transition: background-color 0.3s ease;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .left-column {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .right-column {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        section {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+        }
+
+        section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        section p {
+            font-size: 1.2rem;
+        }
+
+        .skills {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background: var(--accent);
+            color: #111;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            border: 1px solid #999;
+            transition: background-color 0.3s ease;
+        }
+
+        .skills li:hover {
+            background-color: #e0e0e0;
+        }
+
+        .left-column section {
+            background: var(--accent);
+            color: #111;
+        }
+
+        .image-container {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        }
+
+        .design-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .image-item {
+            flex: 1 1 30%;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .learning-experience {
+            background: linear-gradient(135deg, #222, #333);
+            border-left: 6px solid #e3b007;
+            color: #e0f7fa;
+            box-shadow: 0 6px 14px rgba(196, 183, 1, 0.3);
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 1300px;
+            margin: 2rem auto;
+            transition: transform 0.3s ease;
+        }
+
+        .learning-experience:hover {
+            transform: scale(1.01);
+            background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
+        }
+
+        .caption {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">← Back to Home</a>
+    </nav>
+    
+    <header>
+        <h1>Ostomy Appliance Modification Project</h1>
+        <p>October 2023</p>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <section>
+                <h2>Applicable Skills</h2>
+                <ul class="skills">
+                    <li>Teamwork & Cooperation</li>
+                    <li>Coordinating & Planning</li>
+                    <li>AutoCAD Solid-modelling</li>
+                    <li>3D Printing and Assembly</li>
+                </ul>
+            </section>
+            <div class="image-container">
+                <img src="https://media.licdn.com/dms/image/v2/D5622AQE7b2OgrAkzTg/feedshare-shrink_1280/feedshare-shrink_1280/0/1713925595199?e=1740009600&v=beta&t=ZSNzuZgUCqzEhg_dMFkaDNsht1vGy7ZHR7gRGbD9HGk" alt="Header Image">
+            </div>
+            <div class="image-container">
+                <img src="./SlideDeck.png" alt="Slide Deck">
+                <div class="caption">Team Slide-Deck</div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <section>
+                <h2>Patient History</h2>
+                <p>Kenny Baniah is an ostomy patient who’s had a colostomy and has faced multiple 
+                    issues due to his 2-piece ostomy system. His higher BMI has made concave ostomy 
+                    skin flanges very uncomfortable for him, forcing him to switch to a flat skin 
+                    flange for comfort. This, however, caused leakages along with Ulcerative Colitis; or inflammation 
+                    in the large intestine. To solve this problem, we decided that we needed to create 
+                    distance between the ostomy bag and Kenny’s skin to ease the pressure off his abdomen.</p>
+            </section>
+
+            <section>
+                <h2>Design Process</h2>
+                <p>My main thinking involved finding a way to take advantage of available materials to replace the plastic in conventional skin flanges. Small cut piece of PVC piping is used to represent a tunnel for excretions to move to the ostomy bag without direct skin contact.
+                    Conventional skin flanges are replaced with a stretchable material to eliminate abdominal pressure. A 3D-printed model of these attachments would create a tight seal with the skin, held together using kinetic tape commonly used in physiotherapy practices.</p>
+                <div class="design-images">
+                    <div class="image-item">
+                        <img src="./brainstorming.png" alt="Brainstorming">
+                        <div class="caption">Initial scripting & brainstorming</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./applying.png" alt="Design Image 2">
+                        <div class="caption">Low-fidelity prototype</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="./design.png" alt="Design Image 3">
+                        <div class="caption">3D design!</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class ="learning-experience">
+        <h2>Learning Experience</h2>
+        <p>Engaging in the design project for an ostomy bag attachment was a transformative 
+            learning experience. Through the process of solid modeling, I gained valuable 
+            insights into the smallest details that go into product design and the hidden 
+            layers that consumers never tend to think about. The project provided a unique 
+            opportunity to delve into the world of ostomies, expanding my knowledge and fostering 
+            a deeper understanding of user needs. Overall, this experience has not only honed my 
+            solid modeling and speaking skills but has also broadened my expertise in designing 
+            products with meaningful impact on patients' lives.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mohammed Al-Hindi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
