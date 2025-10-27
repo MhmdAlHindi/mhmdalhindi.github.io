@@ -3,69 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <title>Modern Portfolio</title>
+    <title>Mohammed Al-Hindi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo">My Portfolio</a>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
+    <header class="hero" id="top">
+        <nav class="nav" aria-label="Primary navigation">
+            <a href="#top" class="logo">Mohammed Al-Hindi</a>
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <header>
-        <h1>Mohammed Al-Hindi</h1>
-        <p>Biomedical & Electrical Engineering Student</p>
-        <div class="icons">
-            <a href="#" onclick="copyEmailToClipboard(this)" data-email="moalhindi@hotmail.com">Email</a>
-            <a href="https://github.com/MhmdAlHindi">GitHub</a>
-            <a href="https://www.linkedin.com/in/al-hindi">LinkedIn</a>
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <p class="eyebrow">Biomedical & Electrical Engineering Student</p>
+                <h1>Crafting accessible tech that serves real people.</h1>
+                <p class="lead">
+                    I’m Mohammed Al-Hindi, a McMaster University student driven to design medical devices and intelligent systems
+                    that respect the humans who use them. I enjoy translating research, prototyping, and cross-functional teamwork
+                    into solutions that elevate patient experience and community wellbeing.
+                </p>
+                <div class="hero-meta">
+                    <span class="meta-chip">McMaster University</span>
+                    <span class="meta-chip">Ontario, Canada</span>
+                    <span class="meta-chip">AutoCAD · C/C++ · Prototyping</span>
+                </div>
+                <div class="cta-group">
+                    <a class="button primary" href="#projects">Browse projects</a>
+                    <button class="button ghost" data-email="moalhindi@hotmail.com" onclick="copyEmailToClipboard(this)">Copy
+                        email</button>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/MhmdAlHindi" target="_blank" rel="noreferrer noopener" aria-label="GitHub"><i data-feather="github"></i></a>
+                    <a href="https://www.linkedin.com/in/al-hindi" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual" role="presentation">
+                <img src="headerpic.png" alt="Mohammed Al-Hindi collaborating on a design concept">
+                <div class="hero-card">
+                    <p>Designing future-ready healthcare solutions with empathy, rigor, and curiosity.</p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <div class="about-flex">
-                <img src="./pfp.jpg" alt="Profile Picture">
+    <main>
+        <section id="about" class="section about">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>A designer-engineer with heart.</h2>
                 <p>
-                    I’m a passionate and hardworking Biomedical and Electrical Engineering student at McMaster University. Growing up in Dubai and currently studying in Ontario, I’ve embraced diverse cultures that contributed to my growth and skill development. I hope that my passion for knowledge helps me portray the person I’d like to be.
+                    Raised in Dubai and now building my future in Ontario, I thrive in fast-moving, collaborative spaces. I believe
+                    that engineering should feel personal—rooted in listening, cultural awareness, and a drive to do right by the
+                    people we serve.
                 </p>
             </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <h2>Design Projects</h2>
-            <div class="project-grid">
-                <a href="SnakeGame.html" class="project">
-                    <div class="project-image" style="background-image: url('./project2.jpg');"></div>
-                    <div class="project-banner">
-                        <h3>C/C++ Snake Game</h3>
-                        <p>Coded a fully functional snake game in C/C++! The game utilizies Object-Oriented Programming, efficient memory allocation, and customizable gameplay. Different data structures can be implemented via polymorphism for performance tuning.</p>
-                    </div>
-                </a>
-
-                <a href="OstomyProject.html" class="project">
-                    <div class="project-image" style="background-image: url('./SlideDeck.png');"></div>
-                    <div class="project-banner">
-                        <h3>Ostomy Appliance Solution</h3>
-                        <p>Conceptualized and designed a specialized ostomy appliance using AutoCAD 360 and 3D printing, tailored for a patient with Ulcerative Colitis.</p>
-                    </div>
-                </a>
-
-                <a href="OstomyProject.html" class="project">
-                    <div class="project-image" style="background-image: url('./project2.jpg');"></div>
-                    <div class="project-banner">
-                        <h3>Autonomous Line Follower Robot</h3>
-                        <p>Designed and built a PID-controlled robot capable of navigating dynamic tracks using infrared sensors and Arduino.</p>
-                    </div>
-                </a>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h3>What I’m studying</h3>
+                    <p>Biomedical & Electrical Engineering at McMaster University with a focus on human-centered medical devices.</p>
+                </article>
+                <article class="about-card">
+                    <h3>How I work</h3>
+                    <p>Thoughtful researcher, collaborative teammate, and detail-oriented builder who finds clarity in complex
+                        problems.</p>
+                </article>
+                <article class="about-card">
+                    <h3>What energizes me</h3>
+                    <p>Improving access to compassionate care, experimenting with rapid prototyping, and mentoring others in STEM.</p>
+                </article>
             </div>
         </section>
-    </div>
+
+        <section id="experience" class="section experience">
+            <div class="section-heading">
+                <p class="eyebrow">Experience</p>
+                <h2>Hands-on practice that blends theory and empathy.</h2>
+            </div>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <div class="experience-icon"><i data-feather="cpu"></i></div>
+                    <h3>Embedded Systems & Robotics</h3>
+                    <p>Designed and tuned an infrared line-following robot using PID control, balancing accuracy and speed for
+                        variable track conditions.</p>
+                    <ul>
+                        <li>Programmed in C/C++ for responsive navigation.</li>
+                        <li>Led testing to evaluate performance across surfaces.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-icon"><i data-feather="activity"></i></div>
+                    <h3>Patient-Focused Design</h3>
+                    <p>Collaborated with healthcare professionals to design a custom ostomy appliance that improved day-to-day
+                        comfort for individuals with ulcerative colitis.</p>
+                    <ul>
+                        <li>Modeled 3D concepts in AutoCAD and refined using stakeholder input.</li>
+                        <li>Produced functional prototypes via 3D printing.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-icon"><i data-feather="users"></i></div>
+                    <h3>Leadership & Mentorship</h3>
+                    <p>Coordinated STEM outreach and peer tutoring initiatives that celebrated diversity and enabled future-ready
+                        problem solvers.</p>
+                    <ul>
+                        <li>Mentored classmates through design-thinking workshops.</li>
+                        <li>Built inclusive spaces for early innovators to explore engineering.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2>Building purposeful solutions.</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="design.png" alt="3D render of a custom ostomy appliance">
+                    <div class="project-body">
+                        <h3>Ostomy Appliance Solution</h3>
+                        <p>Developed a personalized ostomy system that adapts to patient lifestyles while supporting confidence
+                            and independence.</p>
+                        <div class="project-meta">
+                            <span>AutoCAD</span>
+                            <span>3D Printing</span>
+                            <span>Human Factors</span>
+                        </div>
+                        <a class="text-link" href="OstomyProject.html">View case study</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="brainstorming.png" alt="Students brainstorming around a robot prototype">
+                    <div class="project-body">
+                        <h3>Autonomous Line Follower Robot</h3>
+                        <p>Built a sensor-driven robot with PID control loops that could compete on dynamic tracks and deliver
+                            consistent results under pressure.</p>
+                        <div class="project-meta">
+                            <span>Embedded Systems</span>
+                            <span>Control Theory</span>
+                            <span>Team Collaboration</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="applying.png" alt="Mohammed sketching product ideas on paper">
+                    <div class="project-body">
+                        <h3>Design Thinking Toolkit</h3>
+                        <p>Facilitated workshops that guided peers through empathy interviews, ideation, and rapid prototyping to
+                            solve campus accessibility challenges.</p>
+                        <div class="project-meta">
+                            <span>Workshop Facilitation</span>
+                            <span>Inclusive Design</span>
+                            <span>Rapid Prototyping</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="leadership" class="section leadership">
+            <div class="section-heading">
+                <p class="eyebrow">Leadership</p>
+                <h2>Serving communities I care about.</h2>
+            </div>
+            <div class="leadership-grid">
+                <article class="leadership-card">
+                    <h3>STEM Mentorship</h3>
+                    <p>Guided aspiring engineers through coding fundamentals and design-build challenges that sparked long-term
+                        curiosity.</p>
+                </article>
+                <article class="leadership-card">
+                    <h3>Global Perspective</h3>
+                    <p>Growing up in Dubai and relocating to Canada taught me how to build inclusive, culturally aware solutions
+                        that scale.</p>
+                </article>
+                <article class="leadership-card">
+                    <h3>Community Advocacy</h3>
+                    <p>Champion mental health and accessible education initiatives to ensure every voice is heard in STEM spaces.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="contact-card">
+                <div>
+                    <p class="eyebrow">Let’s connect</p>
+                    <h2>Open to internships, research, and bold ideas.</h2>
+                    <p>Reach out if you’re working on medical technology, inclusive product design, or any challenge that demands
+                        compassionate engineering.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="button primary" href="mailto:moalhindi@hotmail.com">Email me</a>
+                    <button class="button ghost" data-email="moalhindi@hotmail.com" onclick="copyEmailToClipboard(this)">Copy
+                        email</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Mohammed Al-Hindi · Designed with empathy and curiosity.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navLinks.classList.toggle('is-open');
+            navToggle.classList.toggle('is-open');
+        });
+
+        function copyEmailToClipboard(button) {
+            const email = button.getAttribute('data-email');
+            navigator.clipboard.writeText(email).then(() => {
+                const originalText = button.textContent.trim();
+                button.textContent = 'Email copied!';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 2000);
+            }).catch(() => {
+                window.location.href = `mailto:${email}`;
+            });
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        if (window.feather) {
+            window.feather.replace();
+        }
+    </script>
 </body>
 </html>
