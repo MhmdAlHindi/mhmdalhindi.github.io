@@ -13,11 +13,9 @@ student, highlight my signature projects, and present leadership experiences tha
 - [Feather Icons](https://feathericons.com/) for lightweight SVG icons
 
 ## 🚀 Getting started
-Visit at [Link](https://mhmdalhindi.github.io/).
+Visit by clicking [here](https://mhmdalhindi.github.io/)!
 
 ## 🤝 Stay in touch
-Have feedback or opportunities? Reach out via **moalhindi@hotmail.com** or connect on
+Have feedback or just wanna chat? Reach out to me via **moalhindi@hotmail.com** or connect with me on
 [LinkedIn](https://www.linkedin.com/in/al-hindi).
 
-Have feedback or opportunities? Reach out via **moalhindi@hotmail.com** or connect on
-[LinkedIn](https://www.linkedin.com/in/al-hindi).
