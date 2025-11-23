@@ -18,4 +18,3 @@ Visit by clicking [here](https://mhmdalhindi.github.io/)!
 ## 🤝 Stay in touch
 Have feedback or just wanna chat? Reach out to me via **moalhindi@hotmail.com** or connect with me on
 [LinkedIn](https://www.linkedin.com/in/al-hindi).
-
