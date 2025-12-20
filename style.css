@@ -1,5 +1,5 @@
 :root {
-  --bg: #0d111a;
+  --bg: #1f3b7d;
   --surface: rgba(22, 28, 40, 0.88);
   --surface-solid: #161c28;
   --accent: #6d8cff;
@@ -59,7 +59,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(13, 17, 26, 0.75);
+  background: rgb(255, 255, 255);
   border: 1px solid var(--outline);
   border-radius: var(--radius-md);
   padding: 1rem 1.5rem;
@@ -73,6 +73,7 @@ a {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-size: 0.9rem;
+  color: #0b2340;
 }
 
 .nav-links {
@@ -82,12 +83,13 @@ a {
 }
 
 .nav-links a {
-  color: var(--muted);
+  color: #0b2340;
   font-size: 0.95rem;
+  transition: color 0.15s ease;
 }
 
 .nav-links a:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 
 /* ================= HERO ================= */
@@ -141,6 +143,8 @@ a {
 /* ================= SECTIONS ================= */
 .section {
   padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-heading {
