@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Mohammed Al-Hindi — Portfolio
+Welcome to the repository that powers my personal portfolio. This portfolio will hopefully share my story as a Biomedical and Electrical Engineering student
+student, highlight my signature projects, and present leadership experiences that shape how I design with empathy.
 
-# Run and deploy your AI Studio app
+## ✨ Highlights
+- Story-first hero with quick facts and CTAs to explore projects or grab my email.
+- Responsive layout with glassmorphism accents, subtle gradients, and accessible typography.
+- Feather Icons and motion details that make interactions feel polished without heavy scripts.
 
-This contains everything you need to run your app locally.
+## 🧰 Tech stack
+- Semantic HTML5
+- Modern CSS (custom properties, fluid spacing, CSS grid, flexbox)
+- [Feather Icons](https://feathericons.com/) for lightweight SVG icons
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Z9fisiBA_Tx0xdo0oI2UeY_xTonY02ov
+## 🚀 Getting started
+Visit by clicking [here](https://mhmdalhindi.github.io/)!
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🤝 Stay in touch
+Have feedback or just wanna chat? Reach out to me via **moalhindi@hotmail.com** or connect with me on
+[LinkedIn](https://www.linkedin.com/in/al-hindi).
